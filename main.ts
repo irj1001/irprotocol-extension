@@ -1,3 +1,11 @@
+enum Gadget {
+    //% block="gun"
+    Gun,
+    //% block="helmet"
+    Helmet
+
+}
+
 namespace lasertag {
 
     //% block: "the gun sends a shot"
@@ -36,6 +44,16 @@ namespace lasertag {
     //%group="Helmet"
     export function onEvent(handler: () => void) {
         handler();
+    }
+
+    //% block: "select the type of gadget"
+    //%block="Select gadget"
+    //% gadget.fieldEditor="gridpicker"
+    //% gadget.fieldOptions.width=220
+    //% gadget.fieldOptions.columns=1
+    export function select_gadget(gadget:Gadget) {
+
+
     }
 
 }
