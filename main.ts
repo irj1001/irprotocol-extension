@@ -5,7 +5,6 @@ enum Gadget {
     Helmet
 
 }
-
 namespace lasertag {
 
     //% block: "the gun sends a shot"
@@ -52,8 +51,8 @@ namespace lasertag {
     //% gadget.fieldOptions.width=220
     //% gadget.fieldOptions.columns=1
     export function select_gadget(gadget:Gadget) {
-
+        type_gadget=gadget;
 
     }
-
+    let type_gadget;
 }
